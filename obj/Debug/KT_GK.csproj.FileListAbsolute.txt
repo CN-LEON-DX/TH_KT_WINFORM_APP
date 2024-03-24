@@ -1,0 +1,14 @@
+D:\Work&Learn\C#_Project\KT_GK\bin\Debug\KT_GK.exe.config
+D:\Work&Learn\C#_Project\KT_GK\bin\Debug\KT_GK.exe
+D:\Work&Learn\C#_Project\KT_GK\bin\Debug\KT_GK.pdb
+D:\Work&Learn\C#_Project\KT_GK\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Work&Learn\C#_Project\KT_GK\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Work&Learn\C#_Project\KT_GK\obj\Debug\KT_GK.csproj.AssemblyReference.cache
+D:\Work&Learn\C#_Project\KT_GK\obj\Debug\KT_GK.Properties.Resources.resources
+D:\Work&Learn\C#_Project\KT_GK\obj\Debug\KT_GK.csproj.GenerateResource.cache
+D:\Work&Learn\C#_Project\KT_GK\obj\Debug\KT_GK.csproj.CoreCompileInputs.cache
+D:\Work&Learn\C#_Project\KT_GK\obj\Debug\KT_GK.csproj.CopyComplete
+D:\Work&Learn\C#_Project\KT_GK\obj\Debug\KT_GK.exe
+D:\Work&Learn\C#_Project\KT_GK\obj\Debug\KT_GK.pdb
+D:\Work&Learn\C#_Project\KT_GK\obj\Debug\KT_GK.DetailContract.resources
+D:\Work&Learn\C#_Project\KT_GK\obj\Debug\KT_GK.InforPatient.resources
