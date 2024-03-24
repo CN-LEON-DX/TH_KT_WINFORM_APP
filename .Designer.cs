@@ -288,6 +288,7 @@
             this.button_continue_save.TabIndex = 8;
             this.button_continue_save.Text = "Tiếp tục";
             this.button_continue_save.UseVisualStyleBackColor = true;
+            this.button_continue_save.Click += new System.EventHandler(this.click_save_change);
             // 
             // rtbResult_NKC
             // 

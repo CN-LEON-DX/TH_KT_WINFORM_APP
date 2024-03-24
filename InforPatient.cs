@@ -124,6 +124,26 @@ namespace KT_GK
             form.ShowDialog();
         }
 
-        
+        private void click_save_change(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Xác nhận xóa thông tin không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                XoaThongTinHienTai();
+            }
+            
+        }
+        private void XoaThongTinHienTai()
+        {
+            // Xóa thông tin trong các TextBox của GroupBox
+            textBox_day_NKC.Clear();
+            textBox_month_NKC.Clear();
+            textBox_year_NKC.Clear();
+
+            // Xóa thông tin trong ListView
+            listView_service_NKC.Items.Clear();
+            rtbResult_NKC.Clear();
+        }
     }
 }
