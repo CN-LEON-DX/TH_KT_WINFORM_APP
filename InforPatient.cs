@@ -26,7 +26,7 @@ namespace KT_GK
         {
             this.date_NKC = date;
             this.list_service_NKC = list_service;
-            if(date_NKC != null)
+            if (date_NKC != null)
             {
                 DateTime birthday = Convert.ToDateTime(date_NKC);
                 textBox_day_NKC.Text = birthday.Day.ToString();
@@ -119,9 +119,36 @@ namespace KT_GK
 
         private void click_see_detail_contract_NKC(object sender, EventArgs e)
         {
-            string patient_id = comboBox_id_NKC.Text.ToString();
-            DetailContract form = new DetailContract(patient_id, this);
-            form.ShowDialog();
+            string patient_id_NKC = comboBox_id_NKC.Text.ToString();
+            // Kiem tra ds trong 
+            if (!CheckDSLS_HD_TonTai_TRONG_NKC(patient_id_NKC))
+            {
+                MessageBox.Show("Bệnh nhân chưa có hợp đồng nào !", "Thông báo");
+            }
+            else
+            {
+                DetailContract form = new DetailContract(patient_id_NKC, this);
+                form.ShowDialog();
+            }
+
+        }
+
+        private bool CheckDSLS_HD_TonTai_TRONG_NKC(string patient_id_NKC)
+        {
+            string query = "SELECT COUNT(*) FROM tblHopDong_NKC WHERE MaBN_NKC = @patient_id_NKC";
+            int count = 0;
+
+            // Sử dụng kết nối và truy vấn SQL
+            using (SqlConnection conn = new SqlConnection(connectionString_NKC))
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@patient_id_NKC", patient_id_NKC);
+                    count = Convert.ToInt32(cmd.ExecuteScalar());
+                }
+            }
+            return count > 0;
         }
 
         private void click_save_change(object sender, EventArgs e)
@@ -132,7 +159,7 @@ namespace KT_GK
             {
                 XoaThongTinHienTai();
             }
-            
+
         }
 
         private void click_exit_program(object sender, EventArgs e)
