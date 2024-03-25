@@ -27,6 +27,7 @@ namespace KT_GK
         
 
 
+
         private void DetailContract_Load(object sender, EventArgs e)
         {
             // Hieenj thong tin danh sach cac hop dong cua khach hang
@@ -45,19 +46,15 @@ namespace KT_GK
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    // Thêm tham số vào Procedure
-                    cmd.Parameters.AddWithValue("@MaBN", pattient_id_NKC);
-
-                    // Lấy dữ liệu từ database
-                    DataTable dt = new DataTable();
+                    cmd.Parameters.AddWithValue("@MaBN_NKC", pattient_id_NKC);
+                    DataTable dt_NKC = new DataTable();
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
                     {
-                        adapter.Fill(dt);
+                        adapter.Fill(dt_NKC);
                     }
-                    // Tạo DataView mới
-                    DataView dv = new DataView(dt);
+                    DataView dv = new DataView(dt_NKC);
                     // Sắp xếp các cột theo thứ tự
-                    dv.Sort = "Ngay ASC";
+                    dv.Sort = "Ngay_NKC ASC";
                     
                     dtgv_NKC.DataSource = dv;
 
@@ -76,12 +73,20 @@ namespace KT_GK
             // Truyền thông tin của dòng click vào bên giao diện gọi ban đầu
             // Lấy ngày tháng, đưa danh sách dịch vụ vào list view 
             // Lấy ngày từ cell được chọn
-            string date = dtgv_NKC.Rows[e.RowIndex].Cells["Ngay"].Value.ToString();
-            string list_service = dtgv_NKC.Rows[e.RowIndex].Cells["DichVu"].Value.ToString();
+            // Kiểm tra xem cell được click có phải là header hay không
+            if (e.RowIndex == -1 || e.ColumnIndex == -1)
+            {
+                return;
+            }
 
-            // Tạo một instance mới của DetailContract
-            _itransferData_NKC.XLDLieu_NKC(date, list_service);
-            this.Close();
+            string date = dtgv_NKC.Rows[e.RowIndex].Cells["Ngay_NKC"].Value?.ToString();
+            string list_service = dtgv_NKC.Rows[e.RowIndex].Cells["DichVu_NKC"].Value?.ToString();
+
+            if (!string.IsNullOrEmpty(date) && !string.IsNullOrEmpty(list_service))
+            {
+                _itransferData_NKC.XLDLieu_NKC(date, list_service);
+                this.Close();
+            }
         }
 
         

@@ -38,18 +38,18 @@
             this.textBox_month_NKC = new System.Windows.Forms.TextBox();
             this.textBox_day_NKC = new System.Windows.Forms.TextBox();
             this.textBox_name_NKC = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label_year_NKC = new System.Windows.Forms.Label();
+            this.label_MONTH_NKC = new System.Windows.Forms.Label();
+            this.label_list_service_NKC = new System.Windows.Forms.Label();
+            this.label_service_NKC = new System.Windows.Forms.Label();
+            this.label_DAY_NKC = new System.Windows.Forms.Label();
+            this.label_name_NKC = new System.Windows.Forms.Label();
+            this.label_id_NKC = new System.Windows.Forms.Label();
+            this.label_title_NKC = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button_add_infor_patient = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button_continue_save = new System.Windows.Forms.Button();
+            this.button_exit_NKC = new System.Windows.Forms.Button();
+            this.button_continue_save_NKC = new System.Windows.Forms.Button();
             this.rtbResult_NKC = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -58,9 +58,9 @@
             // button_history_list_NKC
             // 
             this.button_history_list_NKC.Image = ((System.Drawing.Image)(resources.GetObject("button_history_list_NKC.Image")));
-            this.button_history_list_NKC.Location = new System.Drawing.Point(709, 412);
+            this.button_history_list_NKC.Location = new System.Drawing.Point(710, 413);
             this.button_history_list_NKC.Name = "button_history_list_NKC";
-            this.button_history_list_NKC.Size = new System.Drawing.Size(81, 51);
+            this.button_history_list_NKC.Size = new System.Drawing.Size(70, 58);
             this.button_history_list_NKC.TabIndex = 10;
             this.button_history_list_NKC.UseVisualStyleBackColor = true;
             this.button_history_list_NKC.Click += new System.EventHandler(this.click_see_detail_contract_NKC);
@@ -74,14 +74,14 @@
             this.groupBox1.Controls.Add(this.textBox_month_NKC);
             this.groupBox1.Controls.Add(this.textBox_day_NKC);
             this.groupBox1.Controls.Add(this.textBox_name_NKC);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label_year_NKC);
+            this.groupBox1.Controls.Add(this.label_MONTH_NKC);
+            this.groupBox1.Controls.Add(this.label_list_service_NKC);
+            this.groupBox1.Controls.Add(this.label_service_NKC);
+            this.groupBox1.Controls.Add(this.label_DAY_NKC);
+            this.groupBox1.Controls.Add(this.label_name_NKC);
+            this.groupBox1.Controls.Add(this.label_id_NKC);
+            this.groupBox1.Controls.Add(this.label_title_NKC);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(13, 10);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -162,93 +162,93 @@
             this.textBox_name_NKC.Size = new System.Drawing.Size(282, 30);
             this.textBox_name_NKC.TabIndex = 2;
             // 
-            // label8
+            // label_year_NKC
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(470, 153);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 23);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Năm";
+            this.label_year_NKC.AutoSize = true;
+            this.label_year_NKC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_year_NKC.Location = new System.Drawing.Point(470, 153);
+            this.label_year_NKC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_year_NKC.Name = "label_year_NKC";
+            this.label_year_NKC.Size = new System.Drawing.Size(47, 23);
+            this.label_year_NKC.TabIndex = 1;
+            this.label_year_NKC.Text = "Năm";
             // 
-            // label7
+            // label_MONTH_NKC
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(273, 150);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 23);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Tháng";
+            this.label_MONTH_NKC.AutoSize = true;
+            this.label_MONTH_NKC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MONTH_NKC.Location = new System.Drawing.Point(273, 150);
+            this.label_MONTH_NKC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_MONTH_NKC.Name = "label_MONTH_NKC";
+            this.label_MONTH_NKC.Size = new System.Drawing.Size(58, 23);
+            this.label_MONTH_NKC.TabIndex = 1;
+            this.label_MONTH_NKC.Text = "Tháng";
             // 
-            // label10
+            // label_list_service_NKC
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(522, 211);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(150, 23);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Danh sách dịch vụ";
+            this.label_list_service_NKC.AutoSize = true;
+            this.label_list_service_NKC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_list_service_NKC.Location = new System.Drawing.Point(522, 211);
+            this.label_list_service_NKC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_list_service_NKC.Name = "label_list_service_NKC";
+            this.label_list_service_NKC.Size = new System.Drawing.Size(150, 23);
+            this.label_list_service_NKC.TabIndex = 1;
+            this.label_list_service_NKC.Text = "Danh sách dịch vụ";
             // 
-            // label5
+            // label_service_NKC
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(73, 210);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 23);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Chọn dịch vụ";
+            this.label_service_NKC.AutoSize = true;
+            this.label_service_NKC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_service_NKC.Location = new System.Drawing.Point(73, 210);
+            this.label_service_NKC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_service_NKC.Name = "label_service_NKC";
+            this.label_service_NKC.Size = new System.Drawing.Size(111, 23);
+            this.label_service_NKC.TabIndex = 1;
+            this.label_service_NKC.Text = "Chọn dịch vụ";
             // 
-            // label4
+            // label_DAY_NKC
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(73, 153);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 23);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Ngày";
+            this.label_DAY_NKC.AutoSize = true;
+            this.label_DAY_NKC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_DAY_NKC.Location = new System.Drawing.Point(73, 153);
+            this.label_DAY_NKC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_DAY_NKC.Name = "label_DAY_NKC";
+            this.label_DAY_NKC.Size = new System.Drawing.Size(50, 23);
+            this.label_DAY_NKC.TabIndex = 1;
+            this.label_DAY_NKC.Text = "Ngày";
             // 
-            // label9
+            // label_name_NKC
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(73, 103);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 23);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Tên bệnh nhân";
+            this.label_name_NKC.AutoSize = true;
+            this.label_name_NKC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_name_NKC.Location = new System.Drawing.Point(73, 103);
+            this.label_name_NKC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_name_NKC.Name = "label_name_NKC";
+            this.label_name_NKC.Size = new System.Drawing.Size(124, 23);
+            this.label_name_NKC.TabIndex = 1;
+            this.label_name_NKC.Text = "Tên bệnh nhân";
             // 
-            // label3
+            // label_id_NKC
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(73, 61);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 23);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Mã bệnh nhân";
+            this.label_id_NKC.AutoSize = true;
+            this.label_id_NKC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_id_NKC.Location = new System.Drawing.Point(73, 61);
+            this.label_id_NKC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_id_NKC.Name = "label_id_NKC";
+            this.label_id_NKC.Size = new System.Drawing.Size(122, 23);
+            this.label_id_NKC.TabIndex = 1;
+            this.label_id_NKC.Text = "Mã bệnh nhân";
             // 
-            // label2
+            // label_title_NKC
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 15);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 28);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Thông tin bệnh nhân";
+            this.label_title_NKC.AutoSize = true;
+            this.label_title_NKC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_title_NKC.Location = new System.Drawing.Point(22, 15);
+            this.label_title_NKC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_title_NKC.Name = "label_title_NKC";
+            this.label_title_NKC.Size = new System.Drawing.Size(193, 28);
+            this.label_title_NKC.TabIndex = 1;
+            this.label_title_NKC.Text = "Thông tin bệnh nhân";
             // 
             // label1
             // 
@@ -269,26 +269,27 @@
             this.button_add_infor_patient.Text = "Chọn";
             this.button_add_infor_patient.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button_exit_NKC
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(504, 420);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 43);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Thoát";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_exit_NKC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_exit_NKC.Location = new System.Drawing.Point(504, 420);
+            this.button_exit_NKC.Name = "button_exit_NKC";
+            this.button_exit_NKC.Size = new System.Drawing.Size(156, 43);
+            this.button_exit_NKC.TabIndex = 9;
+            this.button_exit_NKC.Text = "Thoát";
+            this.button_exit_NKC.UseVisualStyleBackColor = true;
+            this.button_exit_NKC.Click += new System.EventHandler(this.click_exit_program);
             // 
-            // button_continue_save
+            // button_continue_save_NKC
             // 
-            this.button_continue_save.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_continue_save.Location = new System.Drawing.Point(295, 420);
-            this.button_continue_save.Name = "button_continue_save";
-            this.button_continue_save.Size = new System.Drawing.Size(156, 43);
-            this.button_continue_save.TabIndex = 8;
-            this.button_continue_save.Text = "Tiếp tục";
-            this.button_continue_save.UseVisualStyleBackColor = true;
-            this.button_continue_save.Click += new System.EventHandler(this.click_save_change);
+            this.button_continue_save_NKC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_continue_save_NKC.Location = new System.Drawing.Point(295, 420);
+            this.button_continue_save_NKC.Name = "button_continue_save_NKC";
+            this.button_continue_save_NKC.Size = new System.Drawing.Size(156, 43);
+            this.button_continue_save_NKC.TabIndex = 8;
+            this.button_continue_save_NKC.Text = "Tiếp tục";
+            this.button_continue_save_NKC.UseVisualStyleBackColor = true;
+            this.button_continue_save_NKC.Click += new System.EventHandler(this.click_save_change);
             // 
             // rtbResult_NKC
             // 
@@ -321,8 +322,8 @@
             this.Controls.Add(this.button_history_list_NKC);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button_add_infor_patient);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button_continue_save);
+            this.Controls.Add(this.button_exit_NKC);
+            this.Controls.Add(this.button_continue_save_NKC);
             this.MinimumSize = new System.Drawing.Size(897, 540);
             this.Name = "InforPatient";
             this.Text = "Thông tin bệnh nhân";
@@ -345,18 +346,18 @@
         private System.Windows.Forms.TextBox textBox_month_NKC;
         private System.Windows.Forms.TextBox textBox_day_NKC;
         private System.Windows.Forms.TextBox textBox_name_NKC;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label_year_NKC;
+        private System.Windows.Forms.Label label_MONTH_NKC;
+        private System.Windows.Forms.Label label_list_service_NKC;
+        private System.Windows.Forms.Label label_service_NKC;
+        private System.Windows.Forms.Label label_DAY_NKC;
+        private System.Windows.Forms.Label label_name_NKC;
+        private System.Windows.Forms.Label label_id_NKC;
+        private System.Windows.Forms.Label label_title_NKC;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_add_infor_patient;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button_continue_save;
+        private System.Windows.Forms.Button button_exit_NKC;
+        private System.Windows.Forms.Button button_continue_save_NKC;
         private System.Windows.Forms.RichTextBox rtbResult_NKC;
         private System.Windows.Forms.Label label6;
     }

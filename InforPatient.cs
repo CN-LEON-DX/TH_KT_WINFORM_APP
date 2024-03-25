@@ -71,7 +71,7 @@ namespace KT_GK
 
         private void LoadData_ToComboBox()
         {
-            string query = "SELECT MaBN FROM tblBenhNhan";
+            string query = "SELECT MaBN_NKC FROM tblBenhNhan_NKC";
 
             using (SqlConnection conn = new SqlConnection(connectionString_NKC))
             {
@@ -87,7 +87,7 @@ namespace KT_GK
 
                         foreach (DataRow row in dataTable.Rows)
                         {
-                            comboBox_id_NKC.Items.Add(row["MaBN"].ToString());
+                            comboBox_id_NKC.Items.Add(row["MaBN_NKC"].ToString());
                         }
                         comboBox_id_NKC.MaxDropDownItems = 5; // Số lượng mục tối đa hiển thị
                         comboBox_id_NKC.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -104,7 +104,7 @@ namespace KT_GK
         private void Index_Change_Item_NKC(object sender, EventArgs e)
         {
             string patient_id = comboBox_id_NKC.SelectedItem.ToString();
-            string query = "SELECT TenBN FROM tblBenhNhan WHERE MaBN = @MaBN";
+            string query = "SELECT TenBN_NKC FROM tblBenhNhan_NKC WHERE MaBN_NKC = @MaBN";
             using (SqlConnection conn = new SqlConnection(connectionString_NKC))
             {
                 conn.Open();
@@ -134,6 +134,12 @@ namespace KT_GK
             }
             
         }
+
+        private void click_exit_program(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void XoaThongTinHienTai()
         {
             // Xóa thông tin trong các TextBox của GroupBox
