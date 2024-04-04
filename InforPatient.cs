@@ -123,7 +123,7 @@ namespace KT_GK
             // Kiem tra ds trong 
             if (!CheckDSLS_HD_TonTai_TRONG_NKC(patient_id_NKC))
             {
-                MessageBox.Show("Bệnh nhân chưa có hợp đồng nào !", "Thông báo");
+                MessageBox.Show("Không có bản ghi nào !", "Thông báo");
             }
             else
             {
@@ -165,6 +165,31 @@ namespace KT_GK
         private void click_exit_program(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void click_see_report_medical(object sender, EventArgs e)
+        {
+            string sMaBN = comboBox_id_NKC.SelectedItem.ToString();
+            string sTenBN = textBox_name_NKC.Text.ToString();
+            List<string> list_service = new List<string>();
+            list_service.Add(sMaBN);
+            list_service.Add(sTenBN);
+            foreach (string i in list_service)
+            {
+                Console.WriteLine(i);
+            }
+            Form_BaoCao form_report = new Form_BaoCao();
+            form_report.Show();
+            form_report.ShowReport("CR_DSKB.rpt", "select_list_service", list_service);
+        }
+
+        private void click_see_report_wtime(object sender, EventArgs e)
+        {
+            Form_BaoCao form = new Form_BaoCao();
+            form.Show();
+            List<string> list = new List<string>();
+            // Chay ham show o day.
+            form.ShowReport("CR_DSKB_TIME.rpt", "select_list_time", list);
         }
 
         private void XoaThongTinHienTai()

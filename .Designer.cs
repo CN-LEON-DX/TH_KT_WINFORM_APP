@@ -52,13 +52,15 @@
             this.button_continue_save_NKC = new System.Windows.Forms.Button();
             this.rtbResult_NKC = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.button_mediclal_report = new System.Windows.Forms.Button();
+            this.button_report_time = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_history_list_NKC
             // 
             this.button_history_list_NKC.Image = ((System.Drawing.Image)(resources.GetObject("button_history_list_NKC.Image")));
-            this.button_history_list_NKC.Location = new System.Drawing.Point(710, 413);
+            this.button_history_list_NKC.Location = new System.Drawing.Point(761, 413);
             this.button_history_list_NKC.Name = "button_history_list_NKC";
             this.button_history_list_NKC.Size = new System.Drawing.Size(70, 58);
             this.button_history_list_NKC.TabIndex = 10;
@@ -256,15 +258,15 @@
             this.label1.Location = new System.Drawing.Point(24, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.Size = new System.Drawing.Size(0, 19);
             this.label1.TabIndex = 0;
             // 
             // button_add_infor_patient
             // 
             this.button_add_infor_patient.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_add_infor_patient.Location = new System.Drawing.Point(99, 420);
+            this.button_add_infor_patient.Location = new System.Drawing.Point(50, 420);
             this.button_add_infor_patient.Name = "button_add_infor_patient";
-            this.button_add_infor_patient.Size = new System.Drawing.Size(156, 43);
+            this.button_add_infor_patient.Size = new System.Drawing.Size(108, 43);
             this.button_add_infor_patient.TabIndex = 7;
             this.button_add_infor_patient.Text = "Chọn";
             this.button_add_infor_patient.UseVisualStyleBackColor = true;
@@ -272,9 +274,9 @@
             // button_exit_NKC
             // 
             this.button_exit_NKC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_exit_NKC.Location = new System.Drawing.Point(504, 420);
+            this.button_exit_NKC.Location = new System.Drawing.Point(307, 420);
             this.button_exit_NKC.Name = "button_exit_NKC";
-            this.button_exit_NKC.Size = new System.Drawing.Size(156, 43);
+            this.button_exit_NKC.Size = new System.Drawing.Size(96, 43);
             this.button_exit_NKC.TabIndex = 9;
             this.button_exit_NKC.Text = "Thoát";
             this.button_exit_NKC.UseVisualStyleBackColor = true;
@@ -283,9 +285,9 @@
             // button_continue_save_NKC
             // 
             this.button_continue_save_NKC.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_continue_save_NKC.Location = new System.Drawing.Point(295, 420);
+            this.button_continue_save_NKC.Location = new System.Drawing.Point(179, 420);
             this.button_continue_save_NKC.Name = "button_continue_save_NKC";
-            this.button_continue_save_NKC.Size = new System.Drawing.Size(156, 43);
+            this.button_continue_save_NKC.Size = new System.Drawing.Size(103, 43);
             this.button_continue_save_NKC.TabIndex = 8;
             this.button_continue_save_NKC.Text = "Tiếp tục";
             this.button_continue_save_NKC.UseVisualStyleBackColor = true;
@@ -312,6 +314,28 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Kết quả";
             // 
+            // button_mediclal_report
+            // 
+            this.button_mediclal_report.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_mediclal_report.Location = new System.Drawing.Point(431, 420);
+            this.button_mediclal_report.Name = "button_mediclal_report";
+            this.button_mediclal_report.Size = new System.Drawing.Size(142, 43);
+            this.button_mediclal_report.TabIndex = 9;
+            this.button_mediclal_report.Text = "Sổ khám bệnh";
+            this.button_mediclal_report.UseVisualStyleBackColor = true;
+            this.button_mediclal_report.Click += new System.EventHandler(this.click_see_report_medical);
+            // 
+            // button_report_time
+            // 
+            this.button_report_time.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_report_time.Location = new System.Drawing.Point(599, 420);
+            this.button_report_time.Name = "button_report_time";
+            this.button_report_time.Size = new System.Drawing.Size(142, 43);
+            this.button_report_time.TabIndex = 9;
+            this.button_report_time.Text = "Sổ KB thời gian";
+            this.button_report_time.UseVisualStyleBackColor = true;
+            this.button_report_time.Click += new System.EventHandler(this.click_see_report_wtime);
+            // 
             // InforPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -322,6 +346,8 @@
             this.Controls.Add(this.button_history_list_NKC);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button_add_infor_patient);
+            this.Controls.Add(this.button_report_time);
+            this.Controls.Add(this.button_mediclal_report);
             this.Controls.Add(this.button_exit_NKC);
             this.Controls.Add(this.button_continue_save_NKC);
             this.MinimumSize = new System.Drawing.Size(897, 540);
@@ -360,6 +386,8 @@
         private System.Windows.Forms.Button button_continue_save_NKC;
         private System.Windows.Forms.RichTextBox rtbResult_NKC;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button_mediclal_report;
+        private System.Windows.Forms.Button button_report_time;
     }
 }
 

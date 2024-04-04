@@ -37,15 +37,12 @@ namespace KT_GK
         private void Load_Data_From_DB_Contract()
         {
             string proc = "proc_display_listcontract";
-
             using (SqlConnection conn = new SqlConnection(connectionString_NKC))
             {
                 conn.Open();
-
                 using (SqlCommand cmd = new SqlCommand(proc, conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-
                     cmd.Parameters.AddWithValue("@MaBN_NKC", pattient_id_NKC);
                     DataTable dt_NKC = new DataTable();
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
@@ -55,10 +52,7 @@ namespace KT_GK
                     DataView dv = new DataView(dt_NKC);
                     // Sắp xếp các cột theo thứ tự
                     dv.Sort = "Ngay_NKC ASC";
-                    
                     dtgv_NKC.DataSource = dv;
-
-
                     // Thiet lap ten :
                     dtgv_NKC.Columns[0].HeaderText = "Ngày tháng";
                     dtgv_NKC.Columns[1].HeaderText = "Mã bệnh nhân";
@@ -89,9 +83,5 @@ namespace KT_GK
             }
         }
 
-        
-        
-
-        
     }
 }
